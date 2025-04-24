@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
+    android:orientation="horizontal"
+    tools:context=".addrequest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bgcolor"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/roundcorners"
+            android:elevation="50dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Going To :"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/to"
+                android:hint="Enter complete address"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/place"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Date :"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <Button
+                android:id="@+id/datebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/place"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/date"
+                android:drawableEnd="@drawable/baseline_edit_calendar_24"
+                android:onClick="datesele"
+                android:text="Select"
+                android:textSize="20dp"></Button>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/date"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Time :"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <Button
+                android:id="@+id/timebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/datebutton"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/date"
+                android:drawableEnd="@drawable/baseline_watch_24"
+                android:onClick="timesele"
+                android:text="Select"
+                android:textSize="20dp"></Button>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rr"
+                android:layout_below="@+id/timebutton"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Phone :"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+                <TextView
+                    android:id="@+id/othercontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Or any other type of contact "
+                    android:textAlignment="center"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="30dp"
+                    android:textSize="10dp"></TextView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/contactnumber"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/timebutton"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/rr"
+                android:paddingHorizontal="6dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"></EditText>
+
+            <TextView
+                android:id="@+id/Vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/rr"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Vehicle :"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/contactnumber"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/Vehicle"></Spinner>
+
+            <TextView
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Vehicle"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Other :"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:visibility="gone"></TextView>
+
+            <EditText
+                android:id="@+id/othervehicle"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/spinner"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/other"
+                android:hint="  Specify"
+                android:paddingHorizontal="6dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone"></EditText>
+
+            <Button
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/othervehicle"
+                android:layout_marginStart="100dp"
+                android:onClick="postTripLot"
+                android:text=" Post Request"
+                android:textSize="20dp"></Button>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/addrequestad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adunit2"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/addrequestad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginHorizontal="50dp"
+        app:adSize="BANNER"
+        app:adUnitId="@string/adunit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

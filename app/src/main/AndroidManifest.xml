@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dadash.butriplot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/butriplot"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/butriplot"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BUTripLot"
+        tools:targetApi="31">
+        <activity
+            android:name="com.dadash.butriplot.userpad"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.dadash.butriplot.googleformwebview"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dadash.butriplot.addrequest"
+            android:exported="false"
+            android:icon="@drawable/baseline_local_taxi_24"
+            android:label="Add Ride Share "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dadash.butriplot.dashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dadash.butriplot.register"
+            android:exported="false"
+            android:label="Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dadash.butriplot.loginsingup"
+            android:exported="false"
+            android:label="Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dadash.butriplot.logoloading"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/appid" />
+    </application>
+
+</manifest>

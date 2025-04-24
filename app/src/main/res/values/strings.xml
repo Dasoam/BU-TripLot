@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BU TripLot</string>
+    <string-array name="Vehicles">
+        <item>Uber</item>
+        <item>Ola</item>
+        <item>Auto</item>
+        <item>Other</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appid">ca-app-pub-2799673948713485~3987851745</string>
+    <string name="adunit1">ca-app-pub-2799673948713485/7678904492</string>
+    <string name="adunit2">ca-app-pub-2799673948713485/8889658782</string>
+<!--    <string name="testappid"> ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="testadunitid">ca-app-pub-3940256099942544/6300978111</string>-->
+</resources>
