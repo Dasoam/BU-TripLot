@@ -1,6 +1,6 @@
 # BU TripLot
 
-**BU TripLot** is a ride-sharing application designed specifically for students of Bundelkhand University. The app helps students connect with others traveling to the same destination, enabling them to share taxis, split fares, and make campus transportation more efficient and social.
+**BU TripLot** is a ride-sharing application designed specifically for students of BU. The app helps students connect with others traveling to the same destination, enabling them to share taxis, split fares, and make campus transportation more efficient and social.
 
 ## Features
 
